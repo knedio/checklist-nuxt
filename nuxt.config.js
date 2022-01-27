@@ -54,7 +54,8 @@ export default {
   },
 
 	env: {
-    API_URL: env.parsed.API_URL
+    ...env.parsed,
+    API_URL: env.parsed.API_URL || 'https://checklist-laravel.herokuapp.com/api/v1'
   },
 
 
