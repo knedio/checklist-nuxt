@@ -4,8 +4,7 @@ const env = require('dotenv').config();
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - nuxt-todo-task',
-		title: process.env.npm_package_name || '',
+		title: 'Checklist',
     htmlAttrs: {
       lang: 'en'
     },
