@@ -1,0 +1,35 @@
+.word-break { 
+  word-break: break-all;
+}
+.scroll {
+	&::-webkit-scrollbar-track {
+		border-radius: 6px;
+		background-color: #F5F5F5;
+	}
+	&::-webkit-scrollbar {
+		width: 8px !important;
+		height: 8px !important;
+		background-color: #F5F5F5;
+	}
+	&::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		background-color: #CDCDCD;
+	}
+}
+
+/** START Vuetify custom css START */
+.input-label .v-input__slot {
+  margin-bottom: 0px !important;
+}
+.checkbox-field .v-input__slot {
+  align-items: unset !important;
+	
+	.v-input--selection-controls__ripple:before {
+		background: none !important;
+	}
+}
+.menu-icon:focus::before {
+	opacity: 0 !important;
+}
+
+/** END Vuetify custom css END */
