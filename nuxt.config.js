@@ -39,6 +39,7 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@nuxtjs/dotenv'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -53,10 +54,7 @@ export default {
 		debug: true,
   },
 
-	env: {
-    ...env.parsed,
-    API_URL: env.parsed.API_URL || 'https://checklist-laravel.herokuapp.com/api/v1'
-  },
+	env: env.parsed,
 
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
