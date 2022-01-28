@@ -7,7 +7,7 @@ export const get = (url: string, payload = {}, headers = {}) => {
     return axios({
         headers,
     	method: 'GET',
-        url: process.env.API_URL + url,
+        url: process.env.apiUrl + url,
         params:payload
     });
 }
@@ -18,7 +18,7 @@ export const post = (url: string, payload = {}, headers = {}, other = {}) => {
         headers,
         ...other,
         method: 'POST',
-        url: process.env.API_URL + url,
+        url: process.env.apiUrl + url,
         data: payload
     });
 }
@@ -28,7 +28,7 @@ export const put = (url: string, payload = {}, headers = {}) => {
     return axios({
         headers,
         method: 'PUT',
-        url: process.env.API_URL + url,
+        url: process.env.apiUrl + url,
         data: payload
     })
 }
@@ -38,7 +38,7 @@ export const patch = (url: string, payload = {}, headers = {}) => {
     return axios({
         headers,
         method: 'PATCH',
-        url: process.env.API_URL + url,
+        url: process.env.apiUrl + url,
         data: payload
     })
 }
@@ -48,6 +48,6 @@ export const del = (url: string, payload = {}, headers = {}) => {
     return axios({
         headers,
         method: 'DELETE',
-        url: process.env.API_URL + url,
+        url: process.env.apiUrl + url,
     })
 }
